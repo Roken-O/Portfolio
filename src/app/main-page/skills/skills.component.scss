@@ -1,5 +1,6 @@
 section {
   display: flex;
+  padding-bottom: 120px;
 
   .background {
     position: absolute;
@@ -11,7 +12,7 @@ section {
     background-color: rgba(20, 29, 47, 1);
 
     > img {
-      margin-top: 200px;
+      // margin-top: 200px;
       width: 20%;
       height: 80m;
     }

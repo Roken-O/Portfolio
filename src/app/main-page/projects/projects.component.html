@@ -1,1 +1,39 @@
-<p>projects works!</p>
+<section>
+    <div class="background">
+        <img src="./../../../assets/img/d-blue2.png" >
+    </div>
+    <div class="line-h1-container">
+        <img src="./../../../assets/img/blue-line.png">
+        <h1>Portfolio</h1>
+    </div>
+    <p>Explore a selection of my work here - Interact with projects to see my skills in action.</p>
+    <div>
+        @for(project of projects; track project.name; let index = $index){
+            <div class="project-container">
+            @if(index !== 1){
+                <img [ngStyle]= "{'margin-right': '120px'}"  src="{{project.img}}">
+            }
+            <div>
+                <h2>{{project.name}}</h2>
+                <div class="tech-container">
+                    @for(tech of project.techs; track tech; let techIndex = $index){
+                        <span>{{tech}}</span>
+                        @if(techIndex < project.techs.length - 1){
+                            <div class="horizontal-line"></div>
+                        }
+                    }
+                </div>
+                <p>{{project.description}}</p>
+                <div class="buttons-container">
+                    <div><button>{{project.button1}}</button></div>
+                    <div><button class="github-button">{{project.button2}}</button></div>
+                </div>
+            </div>
+            @if(index === 1){
+                <img [ngStyle]= "{'margin-left': '120px'}" src="{{project.img}}">
+            }
+
+        </div>
+        }
+    </div>
+</section>
