@@ -11,9 +11,10 @@
         @for(project of projects; track project.name; let index = $index){
             <div class="project-container">
             @if(index !== 1){
-                <img [ngStyle]= "{'margin-right': '120px'}"  src="{{project.img}}">
+                <!-- <img [ngStyle]= "{'margin-right': '120px'}"  src="{{project.img}}"> -->
+                <img src="{{project.img}}">
             }
-            <div>
+            <div data-aos="fade-down-right">
                 <h2>{{project.name}}</h2>
                 <div class="tech-container">
                     @for(tech of project.techs; track tech; let techIndex = $index){
@@ -30,7 +31,8 @@
                 </div>
             </div>
             @if(index === 1){
-                <img [ngStyle]= "{'margin-left': '120px'}" src="{{project.img}}">
+                <img src="{{project.img}}">
+                <!-- <img [ngStyle]= "{'margin-left': '120px'}" src="{{project.img}}"> -->
             }
 
         </div>
