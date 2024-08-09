@@ -1,7 +1,9 @@
 <section>
     <div class="contact-container">
         <img src="./../../../assets/img/line.png">
-        <h1>Contact</h1>
+        <h1 data-aos="fade-left"
+        data-aos-offset="300"
+        data-aos-easing="ease-in-sine">Contact</h1>
     </div>
     <div class="text-form-container">
         <div class="text-container">
@@ -13,33 +15,44 @@
         <div>
             <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
 
-                <input [(ngModel)]="contactData.name" minlength="3" #name="ngModel" name="name" placeholder="Your name" required>
-                @if(!name.valid && name.touched && !name.disabled){
-                <div class="warning"><span>Your name is required</span></div>
-                }
+                <input [(ngModel)]="contactData.name" minlength="3" #name="ngModel" name="name" placeholder="Your name"
+                    required
+                    [ngClass]="{'invalid-input': !name.valid && name.touched, 'valid-input': !name.touched, 'input-correct': name.valid}">
+                <div class="warning">
+                    @if(!name.valid && name.touched && !name.disabled){
+                    <span>Your name is required</span>
+                    }
+                </div>
 
                 <input [(ngModel)]="contactData.email" #email="ngModel" name="email" placeholder="Your email"
-                    type="email" required pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}">
-                @if(!email.valid && email.touched && !email.disabled){
-                <div class="warning"><span>Your email is required</span></div>
-                }
+                    type="email" required pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}"
+                    [ngClass]="{'invalid-input': !email.valid && email.touched, 'valid-input': !email.touched, 'input-correct': email.valid}">
+                <div class="warning">
+                    @if(!email.valid && email.touched && !email.disabled){
+                    <span>Your email is required</span>
+                    }
+                </div>
 
                 <textarea #message="ngModel" [(ngModel)]="contactData.message" name="message" minlength="4"
-                    placeholder="Your message" required></textarea>
-                @if(!message.valid && message.touched && !message.disabled){
-                <div class="warning"><span>Your message is required</span></div>
-                }
+                    placeholder="Your message" required
+                    [ngClass]="{'invalid-input': !message.valid && message.touched, 'valid-input': !message.touched, 'input-correct': message.valid }"></textarea>
+                <div class="warning">
+                    @if(!message.valid && message.touched && !message.disabled){
+                    <span>Your message is required</span>
+                    }
+                </div>
                 <div class="span-checkbox-container">
                     <input type="checkbox" required>
                     <span>I've read the <span>privacy policy</span> and agree to the processing of my data as
                         outlined.</span>
                 </div>
-                <div class="button-container">
+                <div data-aos="flip-up"  data-aos-easing="ease-out-cubic"
+                data-aos-duration="2000" class="button-container">
                     <input type="submit" value="Send message :)">
                 </div>
             </form>
             <div class="arrow-up-container">
-               <a href="#profile"> <img src="./../../../assets/img/up-arrow.png"></a>
+                <a href="#profile"> <img src="./../../../assets/img/up-arrow.png"></a>
             </div>
         </div>
     </div>

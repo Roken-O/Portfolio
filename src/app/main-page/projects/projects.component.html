@@ -1,10 +1,13 @@
 <section>
     <div class="background">
-        <img src="./../../../assets/img/d-blue2.png" >
+        <img class="img1" src="./../../../assets/img/d-blue2.png" >
+        <img class="img2"  src="./../../../assets/img/l-blue2.png" >
     </div>
     <div class="line-h1-container">
         <img src="./../../../assets/img/blue-line.png">
-        <h1>Portfolio</h1>
+        <h1 data-aos="fade-left"
+        data-aos-offset="300"
+        data-aos-easing="ease-in-sine">Portfolio</h1>
     </div>
     <p>Explore a selection of my work here - Interact with projects to see my skills in action.</p>
     <div>
@@ -12,9 +15,10 @@
             <div class="project-container">
             @if(index !== 1){
                 <!-- <img [ngStyle]= "{'margin-right': '120px'}"  src="{{project.img}}"> -->
-                <img src="{{project.img}}">
+                <img src="{{project.img}}" data-aos="fade-up-right" data-aos-easing="ease-out-cubic"
+                data-aos-duration="2000">
             }
-            <div data-aos="fade-down-right">
+            <div>
                 <h2>{{project.name}}</h2>
                 <div class="tech-container">
                     @for(tech of project.techs; track tech; let techIndex = $index){
@@ -26,16 +30,23 @@
                 </div>
                 <p>{{project.description}}</p>
                 <div class="buttons-container">
-                    <div><button>{{project.button1}}</button></div>
-                    <div><button class="github-button">{{project.button2}}</button></div>
+                    <div data-aos="flip-up"  data-aos-easing="ease-out-cubic"
+                    data-aos-duration="2000"><button>{{project.button1}}</button></div>
+                    <div data-aos="flip-up"  data-aos-easing="ease-out-cubic"
+                    data-aos-duration="2000"><button class="github-button">{{project.button2}}</button></div>
                 </div>
             </div>
             @if(index === 1){
-                <img src="{{project.img}}">
+                <img src="{{project.img}}" data-aos="fade-up-left" data-aos-easing="ease-out-cubic"
+                data-aos-duration="2000">
                 <!-- <img [ngStyle]= "{'margin-left': '120px'}" src="{{project.img}}"> -->
             }
 
         </div>
         }
     </div>
+
+    <!-- <div class="background2">
+        <img src="./../../../assets/img/l-blue2.png" >
+    </div> -->
 </section>

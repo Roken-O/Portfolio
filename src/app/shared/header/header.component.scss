@@ -1,10 +1,14 @@
-@import "./../../../styles.scss";
-
 header {
+  margin: 0;
+  position: fixed;
+  top: 0;
+  left:0;
+  // right: 0;
+  z-index: 1000;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
+  width: 98.9%;
   height: 100px;
   background-color:  rgba(20, 29, 47, 1);
   // position: absolute;
@@ -13,6 +17,7 @@ header {
   // left:0;
 
   .name {
+    z-index: 1000;
     display: flex;
     // align-items: center;
     // justify-content: center;

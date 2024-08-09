@@ -1,13 +1,25 @@
 /* You can add global styles to this file, and also import other style files */
-$backgroundColor : rgba(20, 29, 47, 1);
+@import "aos/dist/aos.css";
+
+// $backgroundColor : rgba(20, 29, 47, 1);
+body{
+//   width:100vw;
+overflow-x: hidden ;
+
+// height: auto;
+ }
 * {
-  margin: 0;
+   margin: 0;
     // background: $backgroundColor;
     color:white;
     font-family: 'Poppins';
     scroll-behavior: smooth;
 }
 
+*{
+  scrollbar-width: auto;
+  scrollbar-color: rgba(0, 190, 232, 1) rgba(255, 255, 255, 0);
+}
 h1{
   font-size: 70px;
 }

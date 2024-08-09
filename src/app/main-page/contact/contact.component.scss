@@ -2,7 +2,7 @@ section {
   background-color: rgba(20, 29, 47, 1);
   display: flex;
   flex-direction: column;
-  padding-bottom: 120px;
+  padding-top: 120px;
 }
 
 .contact-container {
@@ -21,10 +21,11 @@ section {
   justify-content: space-between;
   width: 100%;
 
-  margin-right: 64px;
+//   margin-right: 64px;
 
   .text-container {
-    margin-right: 64px;
+    width:40%;
+    // margin-right: 64px;
     margin-left: 64px;
     > h3 {
       font-size: 32px;
@@ -41,20 +42,17 @@ section {
 form {
   > input,
   textarea {
-    width: 500px;
+    width: 80%;
+    // width: 500px;
     height: 30px;
     padding: 10px 20px 10px 20px;
     margin-top: 20px;
     // margin-bottom: 10px;
     gap: 10px;
-    border-radius: 10px;
-    border: 1px solid rgba(75, 71, 255, 1);
-    opacity: 0px;
+   
     background-color: rgba(20, 29, 47, 1);
 
-    &:hover {
-      border: 1px solid rgba(0, 190, 232, 1);
-    }
+   
   }
 
   > textarea {
@@ -67,11 +65,13 @@ form {
 }
 
 .span-checkbox-container {
+    width:80%;
   font-size: 14px;
   font-weight: 400;
   margin-bottom: 16px;
   margin-top: 16px;
   > span {
+   
     margin-left: 12px;
     > span {
       color: rgba(75, 71, 255, 1);
@@ -124,19 +124,48 @@ form {
   display: flex;
   justify-content: flex-end;
   margin-right: 64px;
-
+a{
   > img {
     cursor: pointer;
     &:hover {
       content: url("./../../../assets/img/up-arrow-blue.png");
     }
+}
   }
 }
 
 .warning{
+    width: 40%;
+    height:10px;
     font-size: 12px;
     >span{
         color: rgba(230, 28, 64, 1);
     }
     
+}
+
+.invalid-input {
+  
+    border-radius: 10px;
+    border: 1px solid  rgba(230, 28, 64, 1);
+    &:hover {
+        border: 1px solid  rgba(230, 28, 64, 1);
+      }
+}
+
+.valid-input{
+    border-radius: 10px;
+    border: 1px solid rgba(75, 71, 255, 1);
+//    opacity: 0px;
+      &:hover {
+     border: 1px solid rgba(0, 190, 232, 1);
+   }
+}
+
+.input-correct{
+    border-radius: 10px;
+    border: 1px solid rgba(112, 230, 28, 1);
+      &:hover {
+     border: 1px solid rgba(112, 230, 28, 1);
+   }
 }
