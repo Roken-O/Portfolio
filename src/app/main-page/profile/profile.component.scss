@@ -145,3 +145,44 @@ section {
     }
   }
 }
+
+// media
+
+@media (max-width: 1285px) {
+  .i-am-container {
+    font-size: 70px;
+    > span {
+      font-size: 70px;
+    }
+  }
+}
+
+@media (max-width: 1090px) {
+  .i-am-container {
+   
+    > span {
+      margin-left: 16px !important;
+    }
+  }
+}
+
+@media (max-width: 940px) {
+  .name-button {
+    h1 {
+      font-size: 60px !important;
+    }
+
+    > span {
+      font-size: 35px !important;
+    }
+}
+
+.i-am-container {
+  > span {
+    font-size: 51px !important;
+    margin-left: 33px !important;
+  }
+}
+}
+
+

@@ -6,8 +6,18 @@
         </div>
     </a>
     <div class="links">
+        <img src="./../../../assets/img/burger-menu.png" (click)="toggleMenu()">
         <a data-aos="flip-up" data-aos-easing="ease-out-cubic" data-aos-duration="2000" href="#aboutme">About me</a>
         <a data-aos="flip-up" data-aos-easing="ease-out-cubic" data-aos-duration="2000" href="#skills">Skills</a>
         <a data-aos="flip-up" data-aos-easing="ease-out-cubic" data-aos-duration="2000" href="#portfolio">Portfolio</a>
+    </div>
+
+    <div class="links-responsive" [ngClass]="{'open': menuOpen}">
+        <img src="./../../../assets/img/close.png" (click)="toggleMenu()">
+        <div>
+            <a href="#aboutme">About me</a>
+            <a href="#skills">Skills</a>
+            <a href="#portfolio">Portfolio</a>
+        </div>
     </div>
 </header>

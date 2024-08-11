@@ -1,31 +1,22 @@
 header {
-  margin: 0;
   position: fixed;
   top: 0;
-  left:0;
-  // right: 0;
+  left: 0;
   z-index: 1000;
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
   height: 100px;
-  background-color:  rgba(20, 29, 47, 1);
-  // position: absolute;
-  // top:0;
-  // right:0;
-  // left:0;
+  background-color: rgba(20, 29, 47, 1);
 
-  >a{
+  > a {
     text-decoration: none;
   }
 
   .name {
     z-index: 1000;
     display: flex;
-    // align-items: center;
-    // justify-content: center;
-    // width:50%;
     margin-left: 64px;
     font-size: 40px;
     font-weight: 900;
@@ -35,7 +26,6 @@ header {
       height: 25px;
 
       > img {
-        // margin-top: 2px;
         width: 16px;
         height: 24px;
       }
@@ -60,9 +50,63 @@ header {
       text-align: center;
       text-decoration: none;
       font-weight: 400;
-      &:hover{
+      &:hover {
         color: rgba(0, 190, 232, 1);
       }
+    }
+
+    > img {
+      display: none;
+      cursor: pointer;
+    }
+  }
+}
+
+.links-responsive {
+  position: fixed;
+  right: -100%;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(20, 29, 47, 0.9);
+  transition: right 0.3s ease-in-out;
+  z-index: 1000;
+
+  &.open {
+    right: 0;
+  }
+
+  > img {
+    position: absolute;
+    top: 34px;
+    right: 62px;
+    cursor: pointer;
+  }
+
+  > div {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    a {
+      color: white;
+      font-size: 24px;
+      margin: 15px 0;
+      text-decoration: none;
+    }
+  }
+}
+
+// media //////////////////
+@media (max-width: 850px) {
+  .links {
+    width: auto !important;
+    > a {
+      display: none;
+    }
+    > img {
+      display: block !important;
     }
   }
 }
