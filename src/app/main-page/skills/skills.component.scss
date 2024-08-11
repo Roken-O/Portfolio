@@ -20,6 +20,11 @@ section {
   }
 
   .skills-img-container {
+    background-image: url('./../../../assets/img/l-blue3.png');
+    background-position: -60% top;
+    background-size: 57% 87%;
+    
+    background-repeat: no-repeat;
     z-index: 100;
     width: 80%;
     display: flex;
@@ -33,11 +38,12 @@ section {
       align-items: center;
       font-size: 14px;
 
-      > img {
+      > img, svg {
         width: 50px;
         height: 55px;
         padding: 30px 60px 10px 60px;
       }
+
     }
   }
 
@@ -117,3 +123,36 @@ section {
 .hover-img:hover {
   animation: bounce 0.6s ease forwards;
 }
+
+// .svg-container{
+//   position: relative;
+//   display: inline-block;
+// }
+   .svg-color path {
+        fill: rgb(0, 190, 232);
+        transition: fill 0.3s ease;
+    }
+
+    .svg-color:hover path {
+        fill: white;
+  
+    }
+
+    .svg-container {
+      position: relative;
+    }
+    
+    .hover-img-container {
+      position: absolute;
+      top: -85px;
+      left: 84%;
+      transform: translateX(-50%);
+      display: none; 
+      transition: all 0.3s ease-in-out;
+    }
+    
+    .svg-container:hover .hover-img-container {
+      transition: all 0.3s ease-in-out;
+      display: block;
+    }
+    

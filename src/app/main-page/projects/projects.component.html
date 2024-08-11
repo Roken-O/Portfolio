@@ -1,49 +1,49 @@
 <section>
+    <div class="background-color">
+
+    </div>
     <div class="background">
-        <img class="img1" src="./../../../assets/img/d-blue2.png" >
-        <img class="img2"  src="./../../../assets/img/l-blue2.png" >
+        <img class="img1" src="./../../../assets/img/d-blue2.png">
+        <img class="img2" src="./../../../assets/img/l-blue2.png">
     </div>
     <div class="line-h1-container">
         <img src="./../../../assets/img/blue-line.png">
-        <h1 data-aos="fade-left"
-        data-aos-offset="300"
-        data-aos-easing="ease-in-sine">Portfolio</h1>
+        <h1 data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine">Portfolio</h1>
     </div>
     <p>Explore a selection of my work here - Interact with projects to see my skills in action.</p>
     <div>
         @for(project of projects; track project.name; let index = $index){
-            <div class="project-container">
+        <div class="project-container">
             @if(index !== 1){
-                <!-- <img [ngStyle]= "{'margin-right': '120px'}"  src="{{project.img}}"> -->
-                <img src="{{project.img}}" data-aos="fade-up-right" data-aos-easing="ease-out-cubic"
+            <!-- <img [ngStyle]= "{'margin-right': '120px'}"  src="{{project.img}}"> -->
+            <img src="{{project.img}}" data-aos="fade-up-right" data-aos-easing="ease-out-cubic"
                 data-aos-duration="2000">
             }
             <div>
                 <h2>{{project.name}}</h2>
                 <div class="tech-container">
                     @for(tech of project.techs; track tech; let techIndex = $index){
-                        <span>{{tech}}</span>
-                        @if(techIndex < project.techs.length - 1){
-                            <div class="horizontal-line"></div>
-                        }
-                    }
+                    <span>{{tech}}</span>
+                    @if(techIndex < project.techs.length - 1){ <div class="horizontal-line">
                 </div>
-                <p>{{project.description}}</p>
-                <div class="buttons-container">
-                    <div data-aos="flip-up"  data-aos-easing="ease-out-cubic"
-                    data-aos-duration="2000"><button>{{project.button1}}</button></div>
-                    <div data-aos="flip-up"  data-aos-easing="ease-out-cubic"
-                    data-aos-duration="2000"><button class="github-button">{{project.button2}}</button></div>
-                </div>
+                }
+                }
             </div>
-            @if(index === 1){
-                <img src="{{project.img}}" data-aos="fade-up-left" data-aos-easing="ease-out-cubic"
-                data-aos-duration="2000">
-                <!-- <img [ngStyle]= "{'margin-left': '120px'}" src="{{project.img}}"> -->
-            }
-
+            <p>{{project.description}}</p>
+            <div class="buttons-container">
+                <div data-aos="flip-up" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                    <button>{{project.button1}}</button></div>
+                <div data-aos="flip-up" data-aos-easing="ease-out-cubic" data-aos-duration="2000"><button
+                        class="github-button">{{project.button2}}</button></div>
+            </div>
         </div>
+        @if(index === 1){
+        <img src="{{project.img}}" data-aos="fade-up-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+        <!-- <img [ngStyle]= "{'margin-left': '120px'}" src="{{project.img}}"> -->
         }
+
+    </div>
+    }
     </div>
 
     <!-- <div class="background2">

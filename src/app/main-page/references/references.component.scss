@@ -1,9 +1,26 @@
 section{
+    position: relative;
 background-color: rgba(20, 29, 47, 1);
 padding-bottom: 64px;
 padding-top: 120px;
+z-index: 22;
 
 }
+
+section::before {
+    content: "";
+    position: absolute;
+    width:60%;
+    height: 50vh;
+    background-image: url('./../../../assets/img/d-blue1.png');
+    background-position: 100% top;
+    background-size: 48% 71%;
+    transform: rotate(180deg);
+    background-repeat: no-repeat;
+    z-index: -20;
+  
+  }
+  
 .reference-img-container{
     display: flex;
     justify-content: flex-end;
