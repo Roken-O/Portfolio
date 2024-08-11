@@ -1,23 +1,27 @@
 <section>
-    <div class="reference-img-container">
-    <div class="reference-container">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti ullam beatae explicabo tempore fugit cumque aspernatur nisi repellat saepe, fugiat cum esse dolorem quo iste dicta at, culpa sit a!</p>
-        <div>
-            <img src="./../../../assets/img/line.png">
-            <span>A.Othman - Team Partner</span>
-        </div>
-
-    </div>
-    <div class="img-container">
-        <img src="./../../../assets/img/colleague.png">
-        <img class="img2" src="./../../../assets/img/blue-line.png">
-    </div>
     <div>
-        <img>
-        <div></div>
-        <div></div>
-        <div></div>
-        <img>
+        <div class="reference-img-container">
+            <div data-aos="zoom-in-up" class="reference-container">
+                <p>{{referance[currentIndex].ref}}</p>
+                <div>
+                    <img src="./../../../assets/img/line.png">
+                    <span>{{referance[currentIndex].name}} - Team Partner</span>
+                </div>
+            </div>
+
+            <div class="img-container">
+                <img class="colleague-img" src="{{referance[currentIndex].img}}">
+                <img class="img2" src="./../../../assets/img/line.png">
+            </div>
+        </div>
+        <div class="arrow-container">
+            <div class="sub-arrow-container">
+                <div (click)="previousReferance()" class="image-container left-arrow"></div>
+                <div class="point"></div>
+                <div class="point"></div>
+                <div class="point"></div>
+                <div (click)="nextReferance()" class="image-container right-arrow"></div>
+            </div>
+        </div>
     </div>
-</div>
 </section>
