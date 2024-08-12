@@ -41,7 +41,7 @@ header {
   }
 
   .links {
-    width: 30%;
+    width: 40%;
     display: flex;
     justify-content: space-between;
     margin-right: 64px;
@@ -98,7 +98,17 @@ header {
   }
 }
 
+.translate{
+  >img{
+    width:45px;
+    height: 26px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+}
+
 // media //////////////////
+
 @media (max-width: 850px) {
   .links {
     width: auto !important;

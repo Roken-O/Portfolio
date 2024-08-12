@@ -69,10 +69,188 @@ section {
 
 // media
 @media (max-width: 1279px) {
-  section{
+  section {
     .text-container {
       width: 60%;
     }
   }
- 
+}
+
+@media (max-width: 1219px) {
+  section {
+    .curve {
+      height: 76% !important;
+    }
+  }
+}
+@media (max-width: 1163px) {
+  .profile-img-container {
+    > img {
+      margin-top: -100px !important;
+    }
+  }
+}
+@media (max-width: 1040px) {
+  .profile-img-container {
+    > img {
+      margin-top: -42px !important;
+    }
+  }
+  .text-container {
+    width: 83% !important;
+  }
+}
+@media (max-width: 980px) {
+  .content {
+    flex-direction: column-reverse !important;
+  }
+  section {
+    .curve {
+      margin-top: -740px !important;
+      height: 65% !important;
+    }
+  }
+
+  .profile-img-container {
+    width: 100% !important;
+  }
+  .profile-img-container {
+    > img {
+      width: 40% !important;
+      height: 74vw !important;
+    }
+  }
+  .text-container {
+    z-index: 100 !important;
+  }
+  section {
+    height: 140vh;
+  }
+}
+
+@media (max-width: 685px) {
+  section {
+    height: 125vh !important;
+    .curve {
+      height: 50% !important;
+    }
+  }
+}
+
+@media (max-width: 640px) {
+  h1 {
+    font-size: 40px !important;
+  }
+  section {
+    .curve {
+      height: 65% !important;
+    }
+  }
+}
+
+@media (max-width: 595px) {
+  section {
+    .curve {
+      margin-top: -770px !important;
+    }
+  }
+}
+
+@media (max-width: 574px) {
+  section {
+    .curve {
+      height: 60% !important;
+    }
+  }
+}
+@media (max-width: 513px) {
+  section {
+    .curve {
+      height: 47% !important;
+    }
+  }
+  .profile-img-container {
+    > img {
+      height: 88vw !important;
+    }
+  }
+
+.text-container {
+    margin-left: 24px !important;
+    >div{
+      >img{
+        width: 36px !important;
+        height: 36px !important;
+        margin-right: 20px !important;
+      }
+    }
+}
+}
+@media (max-width: 490px) {
+  section {
+  .curve {
+    height: 37% !important;
+  }
+}
+}
+@media (max-width: 440px) {
+  section {
+  .curve {
+    margin-top: -810px !important;
+    height: 30% !important;
+  }
+}
+}
+@media (max-width: 420px) {
+  h1 {
+    font-size: 30px !important;
+  }
+
+  .text-container{
+    >p{
+      font-size: 14px !important;
+    }
+  }
+  section {
+    .curve {
+      height: 47% !important;
+    }
+  }
+}
+@media (max-width: 384px) {
+  section {
+    .curve {
+      height: 35% !important;
+    }
+  }
+}
+@media (max-width: 360px) {
+  section {
+    .curve {
+
+      height: 28% !important;
+    }
+  }
+}
+@media (max-width: 347px) {
+  section {
+    .curve {
+      height: 20% !important;
+   
+    }
+  }
+}
+@media (max-width: 330px) {
+  section {
+    .curve {
+      height: 16% !important;
+    }
+  }
+}
+@media (max-width: 322px) {
+  section {
+    .curve {
+      height: 10% !important;
+    }
+  }
 }
