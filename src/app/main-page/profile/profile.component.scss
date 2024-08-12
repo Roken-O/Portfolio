@@ -29,7 +29,6 @@ section {
   }
 
   .text-button-container {
-    z-index: 1;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -68,7 +67,6 @@ section {
         display: flex;
         justify-content: center;
         > a {
-         
           > button {
             width: 150px;
             height: 45px;
@@ -159,7 +157,6 @@ section {
 
 @media (max-width: 1090px) {
   .i-am-container {
-   
     > span {
       margin-left: 16px !important;
     }
@@ -175,14 +172,116 @@ section {
     > span {
       font-size: 35px !important;
     }
-}
+  }
 
-.i-am-container {
-  > span {
-    font-size: 51px !important;
-    margin-left: 33px !important;
+  .i-am-container {
+    > span {
+      font-size: 51px !important;
+      margin-left: 33px !important;
+    }
   }
 }
+@media (max-width: 835px) {
+  .i-am-container {
+    margin-right: 24px;
+    > span {
+      font-size: 45px !important;
+    }
+  }
+.blue-img2{
+  height: 376px !important;
+  width: 208px !important;
+}
+
+.blue-img1 {
+  height: 492px !important;
+  width: 200px !important;
+}
+.text-button-container{
+  margin-top: 70px;
+}
+
+}
+
+@media (max-width: 650px) {
+  .i-am-container {
+    > span {
+      font-size: 34px !important;
+    }
+  }
+
+  .name-button {
+    h1 {
+      font-size: 40px !important;
+    }
+
+    > span {
+      font-size: 22px !important;
+    }
+  }
+}
+@media (max-width: 500px) {
+  .blue-img2{
+    width: 145px !important;
+  }
+  .blue-img1 {
+    height: 492px !important;
+    width: 120px !important;
+  }
+
+  .line-buttons{
+    width: 269px !important;
+  }
+  .scroll-arrow-container{
+   > span {
+    font-size: 18px;
+  }
+}
+}
+
+@media (max-width: 420px) {
+  .text-button-container {
+    width: 100%;
+    display: flex;
+    justify-content:unset !important;
+  }
+  .name-button {
+
+  h1 {
+    font-size: 30px !important;
+  }
+
+  > span {
+    font-size: 18px !important;
+  }
+}
+
+  .i-am-container {
+    > span {
+      font-size: 27px !important;
+    }
+}
+
+.blue-line-mobile{
+  >img{
+    width: 50px !important;
+    margin-right: 20px;
+  }
+}
+}
+
+@media (max-width: 370px) {
+ .link{
+ > img {
+    width: 24px !important;
+    height: 24px !important;
+    &:hover {
+      width: 30px !important;
+      height: 30px !important;
+    }
+}
+
+ }
 }
 
 
