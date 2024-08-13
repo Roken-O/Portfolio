@@ -39,7 +39,6 @@ section {
     overflow: hidden;
     // left: -114px;
     z-index: 30;
-
   }
 }
 .background2 {
@@ -153,10 +152,151 @@ h2 {
   }
 }
 
-
 // media
 @media (max-width: 1300px) {
   .background {
     height: 156%;
   }
+}
+
+@media (max-width: 1170px) {
+  .project-container {
+    width: 100% !important;
+    margin-top: 20px !important;
+  }
+}
+@media (max-width: 1000px) {
+  .tech-container {
+    margin-bottom: 8px !important;
+    margin-top: 8px !important;
+    > span {
+      font-size: 16px !important;
+    }
+    > p {
+      font-size: 14px !important;
+    }
+  }
+
+  .project-container[_ngcontent-ng-c3724227988]
+    > div[_ngcontent-ng-c3724227988] {
+    > p {
+      font-size: 14px;
+    }
+  }
+}
+
+@media (max-width: 940px) {
+  .project-container {
+    flex-direction: column;
+    margin-bottom: 40px;
+  }
+  .background[_ngcontent-ng-c3724227988] {
+    height: 215%;
+  }
+  h1 {
+    font-size: 40px !important;
+  }
+  .line-h1-container[_ngcontent-ng-c3724227988]
+    > img[_ngcontent-ng-c3724227988] {
+    margin-top: 25px;
+  }
+  .project1 {
+    flex-direction: column-reverse;
+  }
+  .line-h1-container[_ngcontent-ng-c1520262465]
+    > img[_ngcontent-ng-c1520262465] {
+    margin-top: 21px;
+  }
+  .background[_ngcontent-ng-c1520262465] {
+    height: 226%;
+  }
+}
+
+@media (max-width: 680px) {
+  .project-container[_ngcontent-ng-c1520262465]
+    > img[_ngcontent-ng-c1520262465] {
+    width: 60%;
+  }
+  .project-container[_ngcontent-ng-c1520262465]
+    > div[_ngcontent-ng-c1520262465] {
+    width: 51%;
+  }
+  section[_ngcontent-ng-c1520262465] > p[_ngcontent-ng-c1520262465] {
+    margin-right: 24px;
+}
+}
+
+@media (max-width: 640px) {
+  h1 {
+    font-size: 30px !important;
+  }
+  .project-container{
+
+   > div{
+    >p {
+      font-size: 14px !important;
+    }
+  }
+}
+
+.buttons-container[_ngcontent-ng-c1520262465] > div[_ngcontent-ng-c1520262465] > button[_ngcontent-ng-c1520262465] {
+  font-size: 14px !important;
+  width: 100px !important;
+  height: 30px !important;
+  &:hover{
+    width: 110px !important;
+    height: 35px !important;
+  }
+}
+.buttons-container[_ngcontent-ng-c1520262465] {
+  display: flex;
+   justify-content: unset;
+}
+.background[_ngcontent-ng-c1520262465][_ngcontent-ng-c1520262465] > .img1[_ngcontent-ng-c1520262465][_ngcontent-ng-c1520262465] {
+  width: 57%;
+  height: 69%;
+}
+}
+
+@media (max-width: 440px) {
+  .project-container[_ngcontent-ng-c1520262465][_ngcontent-ng-c1520262465] > img[_ngcontent-ng-c1520262465][_ngcontent-ng-c1520262465] {
+    width: 85%;
+}
+.project-container[_ngcontent-ng-c1520262465][_ngcontent-ng-c1520262465] > div[_ngcontent-ng-c1520262465][_ngcontent-ng-c1520262465] {
+  width: 80%;
+}
+.line-h1-container[_ngcontent-ng-c1520262465] > img[_ngcontent-ng-c1520262465] {
+  width: 40px;
+  height: 3px;
+  margin-top: 22px;
+  margin-right: 13px;
+}
+
+section[_ngcontent-ng-c1520262465] > p[_ngcontent-ng-c1520262465] {
+  margin-left: 20px;
+  font-size: 14px;
+}
+h2[_ngcontent-ng-c1520262465] {
+  font-size: 22px;
+}
+.horizontal-line[_ngcontent-ng-c1520262465] {
+  margin-left: 4px;
+  margin-right: 4px;
+  width: 1px;
+}
+.project-container[_ngcontent-ng-c1520262465] > div[_ngcontent-ng-c1520262465] > p[_ngcontent-ng-c1520262465] {
+  font-size: 12px !important;
+}
+.tech-container[_ngcontent-ng-c1520262465] {
+   width: auto;
+}
+.background[_ngcontent-ng-c1520262465][_ngcontent-ng-c1520262465] {
+  height: 173%;
+}
+}
+
+@media (max-width: 340px) {
+  .tech-container[_ngcontent-ng-c1520262465] > span[_ngcontent-ng-c1520262465] {
+    font-size: 14px !important;
+}
 }
