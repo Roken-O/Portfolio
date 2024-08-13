@@ -131,7 +131,9 @@ section {
 @media (max-width: 685px) {
   section {
     height: 125vh !important;
+    padding-bottom: 100px !important;
     .curve {
+     
       height: 50% !important;
     }
   }
@@ -235,22 +237,23 @@ section {
 @media (max-width: 347px) {
   section {
     .curve {
-      height: 20% !important;
+      height: 30% !important;
+      margin-top: -850px !important;
    
     }
   }
 }
-@media (max-width: 330px) {
-  section {
-    .curve {
-      height: 16% !important;
-    }
-  }
-}
-@media (max-width: 322px) {
-  section {
-    .curve {
-      height: 10% !important;
-    }
-  }
-}
+// @media (max-width: 330px) {
+//   section {
+//     .curve {
+//       height: 24% !important;
+//     }
+//   }
+// }
+// @media (max-width: 322px) {
+//   section {
+//     .curve {
+//       height: 10% !important;
+//     }
+//   }
+// }
