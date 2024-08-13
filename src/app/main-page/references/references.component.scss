@@ -112,3 +112,61 @@ section::before {
   .right-arrow:hover {
     background-image: url('./../../../assets/img/arrow-right-referance-frame.png');
   }
+
+  // media/////
+  @media (max-width: 1285px) {
+    .reference-container{
+      width:60% !important;
+    }
+    .arrow-container[_ngcontent-ng-c2944682213] {
+      margin-top: 41px;
+      width: 60%;
+    }
+  }
+
+  @media (max-width: 1174px) {
+    .reference-container[_ngcontent-ng-c2944682213] {
+      margin-left: 24px;
+    }
+  }
+
+  @media (max-width: 1030px) {
+    .reference-container {
+      >p{
+        font-size: 14px !important;
+      }
+    }
+  }
+
+  @media (max-width: 970px) {
+    .reference-img-container[_ngcontent-ng-c2944682213] {
+      flex-direction: column-reverse;
+      justify-content: unset;
+      align-items: unset;
+    }
+    .img-container[_ngcontent-ng-c2944682213] {
+      margin-bottom: 30px !important;
+    }
+
+    .reference-container{
+      margin-right: 40px;
+      width:89% !important;
+    }
+    .arrow-container[_ngcontent-ng-c2944682213] {
+      width: 89%;
+    }
+  }
+
+  @media (max-width: 800px) {
+    .reference-container{
+      height: 250px !important;
+    }
+   
+    .reference-container[_ngcontent-ng-c2944682213] > div[_ngcontent-ng-c2944682213] > img[_ngcontent-ng-c2944682213] {
+      width:200px !important
+    }
+
+    .reference-container[_ngcontent-ng-c2944682213] {
+      width: 84% !important;
+  }
+  }
