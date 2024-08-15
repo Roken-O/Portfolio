@@ -1,4 +1,37 @@
 {
-    "frontend" : "Web_DE",
-    "developer" : "Entwickler"
+    "frontend" : "Fähigkeiten",
+    "About me" : "Über mich",
+    "I am" : "Ich bin",
+    "Frontend Developer" : "Frontend Entwicklerin",
+    "let's talk!" : "lass uns reden!",
+    "Hi, I am a frontend developer based in Wuppertal, Germany. I studied Computer Systems Engineering and have always been focused on enhancing my programming skills. At Developer Academy GmbH, I had the opportunity to expand my expertise with a focus on technologies such as Angular, TypeScript, and Object Oriented Programming, which I applied effectively through numerous practical projects.": "Hallo, ich bin eine Frontend-Entwicklerin aus Wuppertal, Deutschland. Ich habe Computer Systems Engineering studiert und habe mich stets darauf konzentriert, meine Programmierfähigkeiten zu verbessern. Bei der Developer Academy GmbH hatte ich die Gelegenheit, mein Fachwissen mit einem Fokus auf Technologien wie Angular, TypeScript und objektorientierte Programmierung zu erweitern, was ich erfolgreich in zahlreichen praktischen Projekten angewendet habe.",
+    "I bring a unique blend of experience and enthusiasm to the field of software development, driving me to continuously seek innovative solutions and tackle new challenges." : "Ich bringe eine einzigartige Mischung aus Erfahrung und Begeisterung in den Bereich der Softwareentwicklung ein, die mich dazu antreibt, ständig nach innovativen Lösungen zu suchen und neue Herausforderungen anzugehen.",
+    "In my future role, I aim to leverage my technical skills and creativity to directly contribute to the success of your team." :"In meiner zukünftigen Rolle möchte ich meine technischen Fähigkeiten und Kreativität nutzen, um direkt zum Erfolg Ihres Teams beizutragen.",
+    "I have grown my frontend developments skills that have allowed me to create different real projects." : "Ich habe meine Fähigkeiten in der Frontend-Entwicklung weiterentwickelt, wodurch ich verschiedene reale Projekte umsetzen konnte.",
+    "Get in Touch":"Kontaktieren Sie mich",
+    "Explore a selection of my work here - Interact with projects to see my skills in action." : "Entdecke hier eine Auswahl meiner Arbeiten – Interagiere mit den Projekten, um meine Fähigkeiten in Aktion zu sehen.",
+    "projects": {
+      "join": {
+        "description": "Task-Manager inspiriert vom Kanban-System. Erstelle und organisiere Aufgaben mithilfe von Drag-and-Drop-Funktionen, weise Benutzer und Kategorien zu."
+      },
+      "elPolloLoco": {
+        "description": "Ein objektorientiertes Jump-, Run- und Wurfspiel. Hilf Pepe, Münzen und Tabasco-Soße zu finden, um die verrückte Henne zu bekämpfen."
+      },
+      "pokedex": {
+        "description": "Basierend auf der PokéAPI, eine einfache Bibliothek, die Pokémon-Informationen bereitstellt und katalogisiert."
+      }
+    },
+    "references": {
+        "bünyamin": {
+          "ref": "Roken ist eine äußerst zuverlässige und lösungsorientierte Person. Die Zusammenarbeit mit ihr macht großen Spaß, da sie stets motiviert und engagiert ist. Sie kann stundenlang fokussiert arbeiten und ist dabei immer hilfsbereit. Ihre Unterstützung und ihr Einsatz sind von unschätzbarem Wert."
+        },
+        "karina": {
+          "ref": "Roken durchschaut sehr schnell fremden Javascript-Code und implementiert sofort ihre Änderungen. Dabei ist sie in ihrer Haltung immer positiv, freundlich und optimistisch. Kurz gesagt: Ich finde Rokens Arbeit und ihre warmherzige Persönlichkeit einfach faszinierend. Auch in anderen Projekten war ich stets von ihren Ergebnissen überrascht, sie ist für mich ein Vorbild!"
+        },
+        "bilal": {
+          "ref": "Ich habe am digitalen Rezeptbuch-Projekt 'Kochwelt' mit Roken gearbeitet. In diesem Projekt haben wir zu dritt zusammengearbeitet und jeder hat gleichermaßen zum Erfolg beigetragen. Roken war eine wertvolle Teamkollegin, deren Einsatz und Zusammenarbeit ich sehr geschätzt habe. Sie zeigte stets große Sorgfalt in ihrer Arbeit und unterstützte das Team mit ihrem technischen Know-how. Rokens Engagement und ihre Fähigkeit, komplexe Aufgaben effizient zu bewältigen, haben das Projekt wesentlich vorangebracht."
+        }
+      },
+      "Team Partner": "Teamkollege"
 }
+  

@@ -1,10 +1,11 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-projects',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, TranslateModule],
   templateUrl: './projects.component.html',
   styleUrl: './projects.component.scss'
 })
@@ -15,7 +16,7 @@ export class ProjectsComponent {
       'name': 'Join',
       'img' : './../../../assets/img/join.png',
       'techs' : ['Firebase', 'JavaScript', 'CSS', 'HTML'], 
-      'description' :'Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.',
+      'description' :'projects.join.description',
       'button1': 'Live test',
       'button2' : 'Github'
     },
@@ -23,7 +24,7 @@ export class ProjectsComponent {
       'name': 'El Pollo Loco',
       'img' : './../../../assets/img/el-pollo-loco-game.png',
       'techs' : ['JavaScript', 'CSS', 'HTML'], 
-      'description' :'An object-oriented jump, run, and throw game. Help Pepe find coins and Tabasco salsa to battle the crazy hen',
+      'description' :'projects.elPolloLoco.description',
       'button1': 'Live test',
       'button2' : 'Github'
     },
@@ -31,7 +32,7 @@ export class ProjectsComponent {
       'name': 'Pokédex',
       'img' : './../../../assets/img/pokemon.png',
       'techs' : ['Api', 'JavaScript', 'CSS', 'HTML'], 
-      'description' :'Based on the PokéAPI a simple library that provides and catalogues pokemon information.',
+      'description' :'projects.pokedex.description',
       'button1': 'Live test',
       'button2' : 'Github'
     },

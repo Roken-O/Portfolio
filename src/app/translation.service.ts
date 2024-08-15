@@ -6,11 +6,11 @@ import { TranslateService } from '@ngx-translate/core';
 })
 export class TranslationService {
 
-  // constructor(private translate: TranslationService) {
-  //   translate.setDefaultLang('en');
-  //  }
+  constructor(private translate: TranslateService) {
+    translate.setDefaultLang('en');
+   }
 
-  //  public switchLanguage(language: string): void{
-  //   this.translate.use(language);
-  //  }
+   public switchLanguage(language: string): void{
+    this.translate.use(language);
+   }
 }

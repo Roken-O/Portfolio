@@ -10,7 +10,7 @@
         <img src="./../../../assets/img/blue-line.png">
         <h1 data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine">Portfolio</h1>
     </div>
-    <p>Explore a selection of my work here - Interact with projects to see my skills in action.</p>
+    <p>{{"Explore a selection of my work here - Interact with projects to see my skills in action." | translate}}</p>
     <div>
         @for(project of projects; track project.name; let index = $index){
         <div class="project-container project{{index}}">
@@ -29,7 +29,7 @@
                 }
                 }
             </div>
-            <p>{{project.description}}</p>
+            <p>{{project.description | translate}}</p>
             <div class="buttons-container">
                 <div data-aos="flip-up" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
                     <button>{{project.button1}}</button></div>

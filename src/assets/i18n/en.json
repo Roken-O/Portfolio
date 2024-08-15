@@ -1,4 +1,37 @@
 {
-    "frontend" : "Web_EN",
-    "developer" : "Developer"
+  "frontend": "Skills",
+  "About me": "About me",
+  "I am": "I am",
+  "Frontend Developer": "Frontend Developer",
+  "let's talk!": "let's talk!",
+  "Hi, I am a frontend developer based in Wuppertal, Germany. I studied Computer Systems Engineering and have always been focused on enhancing my programming skills. At Developer Academy GmbH, I had the opportunity to expand my expertise with a focus on technologies such as Angular, TypeScript, and Object Oriented Programming, which I applied effectively through numerous practical projects.": "Hi, I am a frontend developer based in Wuppertal, Germany. I studied Computer Systems Engineering and have always been focused on enhancing my programming skills. At Developer Academy GmbH, I had the opportunity to expand my expertise with a focus on technologies such as Angular, TypeScript, and Object Oriented Programming, which I applied effectively through numerous practical projects.",
+  "I bring a unique blend of experience and enthusiasm to the field of software development, driving me to continuously seek innovative solutions and tackle new challenges." : "I bring a unique blend of experience and enthusiasm to the field of software development, driving me to continuously seek innovative solutions and tackle new challenges.",
+  "In my future role, I aim to leverage my technical skills and creativity to directly contribute to the success of your team." : "In my future role, I aim to leverage my technical skills and creativity to directly contribute to the success of your team.",
+  "I have grown my frontend developments skills that have allowed me to create different real projects.": "I have grown my frontend developments skills that have allowed me to create different real projects.",
+  "Get in Touch" : "Get in Touch",
+  "Explore a selection of my work here - Interact with projects to see my skills in action." :"Explore a selection of my work here - Interact with projects to see my skills in action.",
+    "projects": {
+      "join": {
+        "description": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories."
+      },
+      "elPolloLoco": {
+        "description": "An object-oriented jump, run, and throw game. Help Pepe find coins and Tabasco salsa to battle the crazy hen."
+      },
+      "pokedex": {
+        "description": "Based on the PokéAPI, a simple library that provides and catalogues Pokémon information."
+      }
+    },
+    "references": {
+      "bünyamin": {
+        "ref": "Roken is an extremely reliable and solution-oriented person. Working with her is a lot of fun because she is always motivated and committed. She can work focused for hours and is always helpful. Her support and dedication are invaluable."
+      },
+      "karina": {
+        "ref": "Roken quickly understands foreign JavaScript code and immediately implements her changes. She is always positive, friendly, and optimistic. In short: I find Roken's work and her warm personality simply fascinating. I was always surprised by her results in other projects, she is a role model for me!"
+      },
+      "bilal": {
+        "ref": "I worked with Roken on the digital recipe book project 'Kochwelt.' In this project, the three of us worked together, and everyone contributed equally to the success. Roken was a valuable team member whose commitment and collaboration I greatly appreciated. She always showed great care in her work and supported the team with her technical expertise. Roken's commitment and ability to efficiently manage complex tasks significantly advanced the project."
+      }
+    },
+    "Team Partner" : "Team Partner"
+  
 }
