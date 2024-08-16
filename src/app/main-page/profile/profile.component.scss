@@ -41,6 +41,9 @@ section {
       font-weight: 400;
       transform: rotate(-90deg);
       white-space: nowrap;
+      .de-lang & {
+        font-size: 40px;
+      }
       > span {
         margin-left: 25px;
       }
@@ -139,7 +142,6 @@ section {
       transform: rotate(-90deg);
       margin-left: 10px;
       margin-block: -6px;
-      // margin-bottom: 4px;
     }
   }
 }
@@ -148,9 +150,9 @@ section {
 
 @media (max-width: 1285px) {
   .i-am-container {
-    font-size: 70px;
+    font-size: 70px !important;
     > span {
-      font-size: 70px;
+      font-size: 70px !important;
     }
   }
 }
@@ -183,7 +185,7 @@ section {
 }
 @media (max-width: 835px) {
   .i-am-container {
-    margin-right: 24px;
+    margin-right: 24px !important;
     > span {
       font-size: 45px !important;
     }
@@ -198,7 +200,7 @@ section {
   width: 200px !important;
 }
 .text-button-container{
-  margin-top: 70px;
+  margin-top: 70px !important;
 }
 
 }
@@ -234,7 +236,7 @@ section {
   }
   .scroll-arrow-container{
    > span {
-    font-size: 18px;
+    font-size: 18px !important;
   }
 }
 }

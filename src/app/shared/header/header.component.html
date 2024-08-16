@@ -6,14 +6,14 @@
         </div>
     </a>
     <div class="links">
+        <div (click)="switchLanguage(currentLanguage)" class="translate">
+            <img [src]="'./../../../assets/img/' + currentFlag">
+        </div>
         <img src="./../../../assets/img/burger-menu.png" (click)="toggleMenu()">
         
         <a data-aos="flip-up" data-aos-easing="ease-out-cubic" data-aos-duration="2000" href="#aboutme">{{'About me' | translate}}</a>
         <a data-aos="flip-up" data-aos-easing="ease-out-cubic" data-aos-duration="2000" href="#skills">{{'frontend' | translate}}</a>
         <a data-aos="flip-up" data-aos-easing="ease-out-cubic" data-aos-duration="2000" href="#portfolio">Portfolio</a>
-        <div (click)="switchLanguage(currentLanguage)" class="translate">
-            <img [src]="'./../../../assets/img/' + currentFlag">
-        </div>
     </div>
 
     <div class="links-responsive" [ngClass]="{'open': menuOpen}">

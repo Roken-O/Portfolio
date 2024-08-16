@@ -32,6 +32,16 @@
         "ref": "I worked with Roken on the digital recipe book project 'Kochwelt.' In this project, the three of us worked together, and everyone contributed equally to the success. Roken was a valuable team member whose commitment and collaboration I greatly appreciated. She always showed great care in her work and supported the team with her technical expertise. Roken's commitment and ability to efficiently manage complex tasks significantly advanced the project."
       }
     },
-    "Team Partner" : "Team Partner"
-  
+    "Team Partner" : "Team Partner",
+    "Contact" : "Contact",
+    "Got a problem to solve?" : "Got a problem to solve?",
+    "Contact me through this form, I am interested in hearing from you, knowing your ideas and contributing to your projects with my work.": "Contact me through this form, I am interested in hearing from you, knowing your ideas and contributing to your projects with my work.",
+    "Need a Frontend developer?" : "Need a Frontend developer?",
+    "Contact me!" : "Contact me!",
+    "Your name is required!" : "Your name is required!",
+    "Your email is required!" : "Your email is required!",
+    "Your message is required!" : "Your message is required!",
+    "I've read the" : "I've read the",
+    "privacy policy" : "privacy policy",
+    "and agree to the processing of my data as outlined." : "and agree to the processing of my data as outlined."
 }

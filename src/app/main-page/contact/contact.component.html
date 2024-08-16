@@ -3,14 +3,13 @@
         <img src="./../../../assets/img/line.png">
         <h1 data-aos="fade-left"
         data-aos-offset="300"
-        data-aos-easing="ease-in-sine">Contact</h1>
+        data-aos-easing="ease-in-sine">{{"Contact" | translate}}</h1>
     </div>
     <div class="text-form-container">
         <div class="text-container">
-            <h3>Got a problem to solve?</h3>
-            <p>Contact me through this form, I am interested in hearing from you, knowing your ideas and contributing to
-                your projects with my work.</p>
-            <p class="sub-text-container">Need a Frontend developer? <b> Contact me!</b></p>
+            <h3>{{"Got a problem to solve?" | translate}}</h3>
+            <p>{{"Contact me through this form, I am interested in hearing from you, knowing your ideas and contributing to your projects with my work." | translate}}</p>
+            <p class="sub-text-container">{{"Need a Frontend developer?"| translate}} <b>{{"Contact me!"| translate}}</b></p>
         </div>
         <div>
             <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
@@ -20,7 +19,7 @@
                     [ngClass]="{'invalid-input': !name.valid && name.touched, 'valid-input': !name.touched, 'input-correct': name.valid}">
                 <div class="warning">
                     @if(!name.valid && name.touched && !name.disabled){
-                    <span>Your name is required</span>
+                    <span>{{"Your name is required!" | translate}}</span>
                     }
                 </div>
 
@@ -29,7 +28,7 @@
                     [ngClass]="{'invalid-input': !email.valid && email.touched, 'valid-input': !email.touched, 'input-correct': email.valid}">
                 <div class="warning">
                     @if(!email.valid && email.touched && !email.disabled){
-                    <span>Your email is required</span>
+                    <span>{{"Your email is required!" | translate}}</span>
                     }
                 </div>
 
@@ -38,13 +37,12 @@
                     [ngClass]="{'invalid-input': !message.valid && message.touched, 'valid-input': !message.touched, 'input-correct': message.valid }"></textarea>
                 <div class="warning">
                     @if(!message.valid && message.touched && !message.disabled){
-                    <span>Your message is required</span>
+                    <span>{{"Your message is required!" | translate}}</span>
                     }
                 </div>
                 <div class="span-checkbox-container">
                     <input type="checkbox" required>
-                    <span>I've read the <span>privacy policy</span> and agree to the processing of my data as
-                        outlined.</span>
+                    <span>{{"I've read the" | translate}} <span>{{"privacy policy" | translate}}</span>{{" and agree to the processing of my data as outlined." | translate}}</span>
                 </div>
                 <div data-aos="flip-up"  data-aos-easing="ease-out-cubic"
                 data-aos-duration="2000" class="button-container">

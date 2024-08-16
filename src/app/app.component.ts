@@ -5,6 +5,7 @@ import { FooterComponent } from "./shared/footer/footer.component";
 import { ImprintComponent } from "./imprit/imprint/imprint.component";
 import {  OnInit } from '@angular/core';
 import AOS from 'aos';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-root',

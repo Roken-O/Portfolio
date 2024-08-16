@@ -99,9 +99,9 @@ header {
   }
 }
 
-.translate{
-  >img{
-    width:45px;
+.translate {
+  > img {
+    width: 45px;
     height: 26px;
     border-radius: 50%;
     cursor: pointer;
@@ -111,6 +111,9 @@ header {
 // media //////////////////
 
 @media (max-width: 850px) {
+  .translate{
+    margin-right: 24px;
+  }
   .links {
     width: auto !important;
     > a {
@@ -121,17 +124,18 @@ header {
     }
   }
 }
+
 @media (max-width: 650px) {
-   .name {
+  .name {
     margin-left: 24px !important;
-   }
-   .links {
+  }
+  .links {
     margin-right: 32px !important;
   }
 
-  .links-responsive{ 
+  .links-responsive {
     > img {
-    right:30px;
+      right: 30px;
+    }
   }
-}
 }

@@ -158,8 +158,6 @@ section {
     > div {
       > img,
       svg {
-        // width: 50px;
-        // height: 55px;
         padding: 30px 30px 10px 30px !important;
       }
     }
@@ -184,8 +182,8 @@ section {
     flex-direction: column-reverse !important;
   }
   .text-container {
-    margin-left: 32px;
-    margin-bottom: 40px;
+    margin-left: 32px !important;
+    margin-bottom: 40px !important;
     > div {
       align-items: flex-start !important;
       > p {
@@ -194,11 +192,14 @@ section {
     }
   }
   .text-container {
-    > div[_ngcontent-ng-c2138407976]
-      > div[_ngcontent-ng-c2138407976]
-      > a[_ngcontent-ng-c2138407976]
-      > button[_ngcontent-ng-c2138407976] {
-      margin-top: 24px;
+    > div {
+      > div {
+        > a {
+          > button {
+            margin-top: 24px !important;
+          }
+        }
+      }
     }
   }
 
@@ -214,11 +215,11 @@ section {
     }
   }
 
-  section[_ngcontent-ng-c2138407976]
-    .skills-img-container[_ngcontent-ng-c2138407976] {
-    width: 88%;
-    padding-left: 32px;
-    // padding-right: -32px;
+  section {
+    .skills-img-container {
+      width: 88% !important;
+      padding-left: 32px !important;
+    }
   }
 }
 
