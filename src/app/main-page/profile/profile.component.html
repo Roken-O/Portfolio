@@ -4,7 +4,7 @@
             <img class="blue-img1" src="./../../../assets/img/d-blue1.png">
         </div>
         <div class="text-button-container">
-            <div class="i-am-container">
+            <div [ngClass]="{'german': isGerman, 'english': !isGerman}" class="i-am-container">
                 <span>{{'I am' | translate}}</span>
             </div>
             <div class="name-button">

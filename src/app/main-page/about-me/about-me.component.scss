@@ -35,15 +35,12 @@ section {
     align-items: center;
     // height: 50vw;
     background-repeat: no-repeat;
-    background-image: 
-      url("./../../../assets/img/d-blue2.png"),
+    background-image: url("./../../../assets/img/d-blue2.png"),
       url("./../../../assets/img/l-blue3.png");
 
-    background-position:
-      top right, top right;
+    background-position: top right, top right;
     background-repeat: no-repeat, no-repeat;
-    background-size:
-      50% 99%, 105% 94%;
+    background-size: 50% 99%, 105% 94%;
 
     > img {
       margin-top: -180px;
@@ -58,7 +55,35 @@ section {
 }
 
 // media
-@media (max-width: 1279px) {
+
+@media (max-width: 1350px) {
+  section {
+    .text-container {
+      > p {
+        &.english {
+          font-size: 16px !important;
+        }
+
+        &.german {
+          font-size: 14px !important;
+        }
+      }
+      > div {
+        > p {
+          &.english {
+            font-size: 16px !important;
+          }
+
+          &.german {
+            font-size: 14px !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1285px) {
   section {
     .text-container {
       width: 60%;
@@ -123,7 +148,6 @@ section {
     height: 125vh !important;
     padding-bottom: 100px !important;
     .curve {
-     
       height: 50% !important;
     }
   }
@@ -167,69 +191,136 @@ section {
     }
   }
 
-.text-container {
+  .text-container {
     margin-left: 24px !important;
-    >div{
-      >img{
+    > div {
+      > img {
         width: 36px !important;
         height: 36px !important;
         margin-right: 20px !important;
       }
     }
-}
+  }
 }
 @media (max-width: 490px) {
   section {
-  .curve {
-    height: 37% !important;
+    .curve {
+      height: 37% !important;
+    }
   }
-}
 }
 @media (max-width: 440px) {
   section {
-  .curve {
-    margin-top: -810px !important;
-    height: 30% !important;
+    .curve {
+      margin-top: -810px !important;
+      height: 34% !important;
+      &.german {
+        margin-top: -762px !important;
+      }
+    }
   }
-}
 }
 @media (max-width: 420px) {
   h1 {
     font-size: 30px !important;
   }
 
-  .text-container{
-    >p{
+  .text-container {
+    > p {
       font-size: 14px !important;
     }
   }
   section {
     .curve {
-      height: 47% !important;
+      height: 30% !important;
+      &.german {
+        margin-top: -734px !important;
+      }
+    }
+  }
+}
+
+@media (max-width: 412px) {
+  section {
+    .curve {
+      height: 20% !important;
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  section {
+    .curve {
+      &.german {
+        margin-top: -747px !important;
+      }
+    }
+  }
+}
+@media (max-width: 392px) {
+  section {
+    .curve {
+      margin-top: -830px !important;
+    }
+  }
+}
+@media (max-width: 387px) {
+  section {
+    .curve {
+      &.german {
+        margin-top: -757px !important;
+      }
     }
   }
 }
 @media (max-width: 384px) {
   section {
     .curve {
-      height: 35% !important;
+      &.german {
+        margin-top: -800px !important;
+      }
+    }
+  }
+}
+@media (max-width: 376px) {
+  section {
+    .curve {
+      margin-top: -850px !important;
     }
   }
 }
 @media (max-width: 360px) {
   section {
     .curve {
-
-      height: 28% !important;
+      margin-top: -872px !important;
+    }
+  }
+}
+@media (max-width: 353px) {
+  section {
+    .curve {
+      &.german {
+        margin-top: -836px !important;
+      }
     }
   }
 }
 @media (max-width: 347px) {
   section {
     .curve {
-      height: 30% !important;
-      margin-top: -850px !important;
-   
+      margin-top: -900px !important;
+      &.german {
+        margin-top: -871px !important;
+      }
+    }
+  }
+}
+@media (max-width: 326px) {
+  section {
+    .curve {
+      &.german {
+        margin-top: -884px !important;
+      }
     }
   }
 }

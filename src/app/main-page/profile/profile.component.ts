@@ -1,5 +1,4 @@
 import { CommonModule } from '@angular/common';
-import { compileNgModule } from '@angular/compiler';
 import { Component } from '@angular/core';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
 
@@ -11,5 +10,15 @@ import { TranslateModule, TranslateService } from '@ngx-translate/core';
   styleUrl: './profile.component.scss'
 })
 export class ProfileComponent {
+  isGerman: boolean = false;
 
+  constructor(private translate: TranslateService) {
+
+    this.translate.onLangChange.subscribe((event) => {
+      this.isGerman = event.lang === 'de';
+    });
+
+
+    // this.isGerman = this.translate.currentLang === 'de';
+  }
 }

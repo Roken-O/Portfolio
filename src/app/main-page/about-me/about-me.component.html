@@ -2,14 +2,14 @@
     <div class="content">
         <div class="text-container">
             <h1 data-aos="fade-up">{{'About me' | translate}}</h1>
-            <p>{{'Hi, I am a frontend developer based in Wuppertal, Germany. I studied Computer Systems Engineering and have always been focused on enhancing my programming skills. At Developer Academy GmbH, I had the opportunity to expand my expertise with a focus on technologies such as Angular, TypeScript, and Object Oriented Programming, which I applied effectively through numerous practical projects.' | translate}}</p>
+            <p [ngClass]="{'german': isGerman, 'english': !isGerman}">{{'Hi, I am a frontend developer based in Wuppertal, Germany. I studied Computer Systems Engineering and have always been focused on enhancing my programming skills. At Developer Academy GmbH, I had the opportunity to expand my expertise with a focus on technologies such as Angular, TypeScript, and Object Oriented Programming, which I applied effectively through numerous practical projects.' | translate}}</p>
             <div>
                 <img src="./../../../assets/img/bulb-desktop.png">
-                <p> {{"I bring a unique blend of experience and enthusiasm to the field of software development, driving me to continuously seek innovative solutions and tackle new challenges." | translate}} </p>
+                <p [ngClass]="{'german': isGerman, 'english': !isGerman}"> {{"I bring a unique blend of experience and enthusiasm to the field of software development, driving me to continuously seek innovative solutions and tackle new challenges." | translate}} </p>
             </div>
             <div>
                 <img src="./../../../assets/img/puzzle-desktop.png">
-                <p>{{"In my future role, I aim to leverage my technical skills and creativity to directly contribute to the success of your team." | translate }}</p>
+                <p [ngClass]="{'german': isGerman, 'english': !isGerman}">{{"In my future role, I aim to leverage my technical skills and creativity to directly contribute to the success of your team." | translate }}</p>
             </div>
 
         </div>
@@ -18,5 +18,5 @@
             <img src="./../../../assets/img/portfolio.png">
         </div>
     </div>
-        <img class="curve" src="./../../../assets/img/curve.png">
+        <img [ngClass]="{'german': isGerman, 'english': !isGerman}" class="curve" src="./../../../assets/img/curve.png">
 </section>
