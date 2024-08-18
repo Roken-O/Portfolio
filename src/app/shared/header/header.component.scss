@@ -7,7 +7,8 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100vw;
+  width: 100%;
+  max-width: 1900px;
   height: 100px;
   background-color: rgba(20, 29, 47, 1);
 
@@ -53,6 +54,7 @@ header {
       font-weight: 400;
       &:hover {
         color: rgba(0, 190, 232, 1);
+        text-decoration: underline rgba(0, 190, 232, 1) ;
       }
     }
 

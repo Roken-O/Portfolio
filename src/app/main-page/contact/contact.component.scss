@@ -170,7 +170,20 @@ form {
   }
 }
 
-//@media ////////
+//@media ////////////////
+@media (min-width: 1900px) {
+  section {
+    height:68vh;
+  }
+  
+}
+@media (max-width: 1899px) {
+  section {
+    height: auto;
+  }
+ 
+}
+
 @media (max-width: 1120px) {
   .text-form-container {
     flex-direction: column;

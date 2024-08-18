@@ -1,4 +1,5 @@
 section {
+  height: auto;
   .background-color {
     padding-top: 120px;
     background-color: rgba(20, 29, 47, 1);
@@ -14,13 +15,15 @@ section {
   justify-content: space-between;
   position: absolute;
   width: 100%;
-  height: 200%;
+  max-width: 1900px;
+  height: 85%;
   z-index: -1;
   background-color: rgba(20, 29, 47, 1);
 
   > .img1 {
     position: relative;
     margin-top: 87px;
+    max-width: 1900px;
     width: 30%;
     height: 40%;
     left: -114px;
@@ -28,6 +31,7 @@ section {
   > .img2 {
     position: relative;
     margin-top: 14px;
+    max-width: 1900px;
     width: 21%;
     height: 72%;
     right: 0;
@@ -129,7 +133,18 @@ h2 {
   }
 }
 
-// media
+// media /////
+
+// @media (max-width: 2000px) {
+//   .background {
+//     height: 100%;
+//   }
+// }
+@media (max-width: 1607px) {
+  .background {
+    height: 170%;
+  }
+}
 @media (max-width: 1300px) {
   .background {
     height: 156%;
