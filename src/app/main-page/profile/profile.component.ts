@@ -13,12 +13,8 @@ export class ProfileComponent {
   isGerman: boolean = false;
 
   constructor(private translate: TranslateService) {
-
     this.translate.onLangChange.subscribe((event) => {
       this.isGerman = event.lang === 'de';
     });
-
-
-    // this.isGerman = this.translate.currentLang === 'de';
   }
 }

@@ -18,7 +18,7 @@ export class ProjectsComponent {
       'techs' : ['Firebase', 'JavaScript', 'CSS', 'HTML'], 
       'description' :'projects.join.description',
       'button1': 'Live test',
-      'button2' : 'Github'
+      'button2' : 'https://github.com/FelixKroth/Join-Kanban-Board---G.4'
     },
     {
       'name': 'El Pollo Loco',
@@ -26,15 +26,15 @@ export class ProjectsComponent {
       'techs' : ['JavaScript', 'CSS', 'HTML'], 
       'description' :'projects.elPolloLoco.description',
       'button1': 'Live test',
-      'button2' : 'Github'
+      'button2' : 'https://github.com/Roken-O/-EL-POLLO-LOCO'
     },
     {
       'name': 'Pokédex',
       'img' : './../../../assets/img/pokemon.png',
       'techs' : ['Api', 'JavaScript', 'CSS', 'HTML'], 
       'description' :'projects.pokedex.description',
-      'button1': 'Live test',
-      'button2' : 'Github'
+      'button1': 'https://roken-othman.de/pokedex/index.html',
+      'button2' : 'https://github.com/Roken-O/Pokedex'
     },
   ];
 

@@ -109,6 +109,7 @@ h2 {
     margin-top: 16px;
     height: 50px;
     margin-right: 32px;
+    >a{
     > button {
       font-size: 18px;
       width: 150px;
@@ -125,21 +126,17 @@ h2 {
         height: 50px;
       }
     }
+  }
 
     .github-button {
-      background-color: rgba(20, 29, 47, 1);
-      border: 1px solid rgba(0, 190, 232, 1);
+      background-color: rgba(20, 29, 47, 1) !important;
+      border: 1px solid rgba(0, 190, 232, 1) !important;
     }
   }
 }
 
 // media /////
 
-// @media (max-width: 2000px) {
-//   .background {
-//     height: 100%;
-//   }
-// }
 @media (max-width: 1607px) {
   .background {
     height: 170%;
@@ -239,6 +236,7 @@ h2 {
 
   .buttons-container {
     > div {
+      >a{
       > button {
         font-size: 14px !important;
         width: 100px !important;
@@ -249,6 +247,7 @@ h2 {
         }
       }
     }
+  }
   }
   .buttons-container {
     display: flex !important;

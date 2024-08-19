@@ -9,21 +9,20 @@ import { TranslateModule } from '@ngx-translate/core';
   standalone: true,
   imports: [FormsModule, CommonModule, TranslateModule],
   templateUrl: './contact.component.html',
-  styleUrl: './contact.component.scss'
+  styleUrl: './contact.component.scss',
 })
 export class ContactComponent {
-
-  contactData={
+  contactData = {
     name: '',
     email: '',
-    message : '',
-  }
-
-  http =  inject(HttpClient)
-  mailTest = true;
+    message: '',
+  };
+  showError = false;
+  isPrivacyPolicyAccepted = false;
+  http = inject(HttpClient);
 
   post = {
-    endPoint: 'https://deineDomain.de/sendMail.php',
+    endPoint: 'https://roken-othman.de/sendMail.php',
     body: (payload: any) => JSON.stringify(payload),
     options: {
       headers: {
@@ -34,11 +33,13 @@ export class ContactComponent {
   };
 
   onSubmit(ngForm: NgForm) {
-    if (ngForm.submitted && ngForm.form.valid && !this.mailTest) {
-      this.http.post(this.post.endPoint, this.post.body(this.contactData))
+    if (!this.contactData.name || !this.contactData.email || !this.contactData.message || !this.isPrivacyPolicyAccepted) {
+      this.showError = true;
+    } else if (ngForm.submitted && ngForm.form.valid) {
+      this.http
+        .post(this.post.endPoint, this.post.body(this.contactData))
         .subscribe({
           next: (response) => {
-
             ngForm.resetForm();
           },
           error: (error) => {
@@ -46,9 +47,9 @@ export class ContactComponent {
           },
           complete: () => console.info('send post complete'),
         });
-    } else if (ngForm.submitted && ngForm.form.valid && this.mailTest) {
-
-      ngForm.resetForm();
     }
   }
+  closeModal() {
+    this.showError = false;
+  } 
 }
