@@ -64,7 +64,6 @@ section {
 }
 @media (max-width: 1920px) {
   .profile-img-container {
-  
     > img {
       margin-top: -170px !important;
     }
@@ -73,13 +72,12 @@ section {
 }
 @media (max-width: 1420px) {
   .profile-img-container {
-  
     > img {
       margin-top: -148px !important;
     }
   }
-
 }
+
 @media (max-width: 1350px) {
   section {
     .text-container {
@@ -87,7 +85,6 @@ section {
         &.english {
           font-size: 16px !important;
         }
-
         &.german {
           font-size: 14px !important;
         }
@@ -136,6 +133,7 @@ section {
     }
   }
 }
+
 @media (max-width: 1147px) {
   section {
     .curve {
@@ -143,6 +141,7 @@ section {
     }
   }
 }
+
 @media (max-width: 1040px) {
   .profile-img-container {
     > img {
@@ -153,6 +152,7 @@ section {
     width: 83% !important;
   }
 }
+
 @media (max-width: 1039px) {
   .content {
     flex-direction: column-reverse !important;
@@ -186,6 +186,7 @@ section {
     }
 }
 }
+
 @media (max-width: 940px) {
   h1 {
     font-size: 40px !important;
@@ -214,6 +215,7 @@ section {
   height: 620px !important;
   }
 }
+
 @media (max-width: 640px) {
   h1 {
     font-size: 30px !important;

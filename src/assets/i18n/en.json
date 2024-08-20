@@ -44,5 +44,6 @@
     "I've read the" : "I've read the",
     "privacy policy" : "privacy policy",
     " and agree to the processing of my data as outlined." : " and agree to the processing of my data as outlined.",
-    "Please fill in all fields and accept the privacy policy." :"Please fill in all fields and accept the privacy policy."
+    "Please fill in all fields and accept the privacy policy." :"Please fill in all fields and accept the privacy policy.",
+    "Thank you! Your email has been sent successfully." : "Thank you! Your email has been sent successfully."
 }

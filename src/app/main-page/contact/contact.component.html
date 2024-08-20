@@ -55,10 +55,17 @@
         </div>
     </div>
     @if(showError){
-    <div class="modal" (click)="closeModal()">
-        <div class="modal-content">
+    <div class="popup-container" (click)="closePopup()">
+        <div class="popup-content">
             <p>{{"Please fill in all fields and accept the privacy policy." | translate}}</p>
             <span class="close-button" >&times;</span>
+        </div>
+    </div>
+}
+    @if(sendEmailConfirmation){
+    <div class="popup-container" (click)="closePopup()">
+        <div class="popup-content">
+            <p>{{"Thank you! Your email has been sent successfully." | translate}}</p>
         </div>
     </div>
 }

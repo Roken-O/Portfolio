@@ -137,6 +137,12 @@ h2 {
 
 // media /////
 
+
+@media (max-width: 1907px) {
+  .background {
+    height: 200%;
+  }
+}
 @media (max-width: 1607px) {
   .background {
     height: 170%;

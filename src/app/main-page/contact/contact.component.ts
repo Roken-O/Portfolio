@@ -18,6 +18,7 @@ export class ContactComponent {
     message: '',
   };
   showError = false;
+  sendEmailConfirmation = false;
   isPrivacyPolicyAccepted = false;
   http = inject(HttpClient);
 
@@ -36,20 +37,21 @@ export class ContactComponent {
     if (!this.contactData.name || !this.contactData.email || !this.contactData.message || !this.isPrivacyPolicyAccepted) {
       this.showError = true;
     } else if (ngForm.submitted && ngForm.form.valid) {
-      this.http
-        .post(this.post.endPoint, this.post.body(this.contactData))
-        .subscribe({
+      this.sendEmailConfirmation = true;
+      setInterval(()=>{
+        this.sendEmailConfirmation = false;
+      }, 2300);
+      this.http.post(this.post.endPoint, this.post.body(this.contactData)).subscribe({
           next: (response) => {
             ngForm.resetForm();
           },
           error: (error) => {
             console.error(error);
           },
-          complete: () => console.info('send post complete'),
         });
     }
   }
-  closeModal() {
+  closePopup() {
     this.showError = false;
   } 
 }

@@ -170,7 +170,7 @@ form {
   }
 }
 
-.modal {
+.popup-container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -185,7 +185,7 @@ form {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-.modal-content {
+.popup-content {
   background-color: rgba(65, 73, 89, 0.9);
   padding: 20px;
   border-radius: 5px;
@@ -330,7 +330,7 @@ form {
 }
 
 @media (max-width: 400px) {
-  .modal-content {
+  .popup-content {
     width: 220px;
   }
 }

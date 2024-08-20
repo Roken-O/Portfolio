@@ -1,6 +1,6 @@
 <header>
     <a class="first-name" href="#profile">
-        <div data-aos="flip-up" data-aos-easing="ease-out-cubic" data-aos-duration="2000" class="name">Ro
+        <div class="name">Ro
             <div class="letter-ki"><img src="./../../../assets/img/kI.png"></div>
             <div class="letter-k"><img src="./../../../assets/img/k.png"></div>en
         </div>
@@ -11,17 +11,17 @@
         </div>
         <img src="./../../../assets/img/burger-menu.png" (click)="toggleMenu()">
         
-        <a data-aos="flip-up" data-aos-easing="ease-out-cubic" data-aos-duration="2000" href="#aboutme">{{'About me' | translate}}</a>
-        <a data-aos="flip-up" data-aos-easing="ease-out-cubic" data-aos-duration="2000" href="#skills">{{'frontend' | translate}}</a>
-        <a data-aos="flip-up" data-aos-easing="ease-out-cubic" data-aos-duration="2000" href="#portfolio">Portfolio</a>
+        <a href="#aboutme">{{'About me' | translate}}</a>
+        <a href="#skills">{{'frontend' | translate}}</a>
+        <a href="#portfolio">Portfolio</a>
     </div>
 
     <div class="links-responsive" [ngClass]="{'open': menuOpen}">
         <img src="./../../../assets/img/close.png" (click)="toggleMenu()">
         <div>
-            <a href="#aboutme">{{'About me' | translate}}</a>
-            <a href="#skills">{{'frontend' | translate}}</a>
-            <a href="#portfolio">Portfolio</a>
+            <a (click)="toggleMenu()" href="#aboutme">{{'About me' | translate}}</a>
+            <a (click)="toggleMenu()" href="#skills">{{'frontend' | translate}}</a>
+            <a (click)="toggleMenu()" href="#portfolio">Portfolio</a>
         </div>
     </div>
 </header>

@@ -54,7 +54,8 @@ h1{
     body {
         background-color:  rgba(20, 29, 47, 1);
         width: 100%;
-        display: flex;
-        justify-content: center;        
+        overflow-x: hidden;
+        // display: flex;
+        // justify-content: center;        
     }
 }
