@@ -17,9 +17,9 @@
         <div class="arrow-container">
             <div class="sub-arrow-container">
                 <div (click)="previousReferance()" class="image-container left-arrow"></div>
-                <div class="point"></div>
-                <div class="point"></div>
-                <div class="point"></div>
+                @for(referance of referance; track referance.name; let index = $index){
+                <div [ngClass]="{'pointDarkBlue': currentIndex === index, 'pointLightBlue': currentIndex !== index}"></div>
+                }
                 <div (click)="nextReferance()" class="image-container right-arrow"></div>
             </div>
         </div>

@@ -12,7 +12,6 @@ import AOS from 'aos';
 })
 export class AboutMeComponent {
   ngOnInit() {
-    console.log('AOS initialisiert');
     AOS.init();
   }
   isGerman: boolean = false;
