@@ -2,14 +2,21 @@ section{
     background-color:  rgba(20, 29, 47, 1);
     .content{
      padding: 30px 64px 32px 64px;
-        >h1, h3{
+        >h2, h3{
+            margin-top: 40px;
             margin-bottom: 16px;
         }  
     }
 }
+a{
+    color: rgba(0, 190, 232, 1);
+}
+h1{
+    font-size: 47px;
+}
 
-.imprint-container{
-    padding-top: 0px;
+.privacy-container{
+    padding-top: 50px;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -21,19 +28,4 @@ section{
         margin-right: 20px;
     }
 
-}
-
-a{
-    color: rgba(0, 190, 232, 1);
-}
-
-h1{
-    font-size: 40px;
-}
-
-.footer-fixed {
-    max-width: 1970px;
-    width: 100%;
-    position: fixed;
-    bottom: 0;
 }

@@ -14,12 +14,12 @@ export class ReferencesComponent {
   referance = [
     {
       name: 'Bünyamin Tig',
-      img: './../../../assets/img/büny-img.png',
+      img: './../../../assets/img/buny.png',
       ref: 'references.bünyamin.ref',
     },
     {
       name: 'Karina Tanei',
-      img: './../../../assets/img/karina-img.jpg',
+      img: './../../../assets/img/karina.png',
       ref: 'references.karina.ref',
     },
     {

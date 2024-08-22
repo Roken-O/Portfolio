@@ -1,7 +1,7 @@
 <section>
     <div>
         <div class="reference-img-container">
-            <div data-aos="zoom-in-up" class="reference-container">
+            <div data-aos="zoom-in-up" data-aos-offset="300" data-aos-easing="ease-in-sine" class="reference-container">
                 <p>{{referance[currentIndex].ref | translate}}</p>
                 <div>
                     <img src="./../../../assets/img/line.png">
@@ -10,7 +10,9 @@
             </div>
 
             <div class="img-container">
-                <img class="colleague-img" src="{{referance[currentIndex].img}}">
+                <div>
+                    <img class="colleague-img {{ currentIndex == 0 ? 'img-width' : '' }}" src="{{ referance[currentIndex].img }}">
+                </div>
                 <img class="img2" src="./../../../assets/img/line.png">
             </div>
         </div>

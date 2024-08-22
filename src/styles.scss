@@ -59,3 +59,8 @@ h1{
         // justify-content: center;        
     }
 }
+@media screen and (max-height: 7000px) {
+  body{
+    background-color:  rgba(20, 29, 47, 1);
+  }
+}

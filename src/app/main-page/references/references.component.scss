@@ -50,6 +50,16 @@ section::before {
   justify-content: flex-end;
   align-items: center;
   margin-left: 64px;
+  >div{
+    display: flex;
+  justify-content: center;
+  align-items: center;
+    width: 180px;
+    height: 180px;
+    border: 2px solid rgba(0, 190, 232, 1);
+    border-radius: 50%;
+    overflow: hidden;
+  }
 }
 .img2 {
   width: 150px;
@@ -57,10 +67,14 @@ section::before {
 }
 
 .colleague-img {
-  width: 180px;
-  height: 180px;
-  border: 2px solid rgba(0, 190, 232, 1);
-  border-radius: 50%;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.img-width{
+  width:140%;
+  margin-top:35px;
 }
 
 .arrow-container {

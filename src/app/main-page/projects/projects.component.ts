@@ -18,14 +18,14 @@ export class ProjectsComponent {
       'techs' : ['Firebase', 'JavaScript', 'CSS', 'HTML'], 
       'description' :'projects.join.description',
       'button1': 'Live test',
-      'button2' : 'https://github.com/FelixKroth/Join-Kanban-Board---G.4'
+      'button2' : 'https://github.com/Roken-O/Join-Kanban-Board---G.4'
     },
     {
       'name': 'El Pollo Loco',
       'img' : './../../../assets/img/el-pollo-loco-game.png',
       'techs' : ['JavaScript', 'CSS', 'HTML'], 
       'description' :'projects.elPolloLoco.description',
-      'button1': 'Live test',
+      'button1': 'https://roken-othman.de/el-pollo-loco/index.html',
       'button2' : 'https://github.com/Roken-O/-EL-POLLO-LOCO'
     },
     {
