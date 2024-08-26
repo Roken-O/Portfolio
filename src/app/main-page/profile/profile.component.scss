@@ -132,12 +132,9 @@ section {
 .scroll-arrow-container {
   display: flex;
   flex-direction: column;
-  cursor: pointer;
   transform: rotate(90deg);
-
   > span {
     white-space: nowrap;
-
     font-size: 23px;
     font-weight: 400;
     > img {
@@ -172,6 +169,12 @@ section {
     &.german {
       font-size: 46px !important;
     }
+  }
+}
+
+@media (max-width: 1225px) {
+  .i-am-container > span {
+    margin-left: 13px !important;
   }
 }
 

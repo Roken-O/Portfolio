@@ -24,7 +24,6 @@ section::before {
 
 .contact-container {
   display: flex;
-
   > img {
     width: 50px;
     height: 4px;
@@ -211,10 +210,9 @@ form {
 
 //@media ////////////////
 @media (min-width: 1900px) {
-  section {
-    height:68vh;
-  }
-  
+  // section {
+  //   height:68vh;
+  // } 
 }
 @media (max-width: 1899px) {
   section {
