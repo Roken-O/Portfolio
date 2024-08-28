@@ -7,15 +7,14 @@
     </div>
     <div class="line-h1-container">
         <img src="./../../../assets/img/blue-line.png">
-        <h1 data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine">Portfolio</h1>
+        <h1 data-aos="fade-up" data-aos-duration="2000">Portfolio</h1>
     </div>
     <p>{{"Explore a selection of my work here - Interact with projects to see my skills in action." | translate}}</p>
     <div>
         @for(project of projects; track project.name; let index = $index){
         <div class="project-container project{{index}}">
             @if(index !== 1){
-            <img src="{{project.img}}" data-aos="fade-up-right" data-aos-easing="ease-out-cubic"
-                data-aos-duration="2000">
+            <img data-aos="zoom-in" data-aos-duration="2000" src="{{project.img}}">
             }
             <div>
                 <h2>{{project.name}}</h2>
@@ -29,12 +28,12 @@
             </div>
             <p>{{project.description | translate}}</p>
             <div class="buttons-container">
-                <div data-aos="flip-up" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                <div>
                     <a href="{{project.button1}}" target="_blank">
                         <button>Live test</button>
                     </a>
                 </div>
-                <div data-aos="flip-up" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                <div>
                     <a href="{{project.button2}}" target="_blank">
                         <button class="github-button">Github</button>
                     </a>
@@ -42,7 +41,7 @@
             </div>
         </div>
         @if(index === 1){
-        <img src="{{project.img}}" data-aos="fade-up-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+        <img data-aos="zoom-in" data-aos-duration="2000" src="{{project.img}}">
         }
 
     </div>

@@ -6,6 +6,7 @@ section {
   padding-top: 120px;
   padding-bottom: 60px;
   z-index: 10;
+  overflow-x: hidden;
 }
 
 section::before {
@@ -118,6 +119,7 @@ form {
     border-radius: 10px;
     border: 0px;
     cursor: pointer;
+    transition: all 0.5s ease-in-out;
     &:hover {
       background-color: rgba(0, 190, 232, 1);
     }
@@ -196,7 +198,6 @@ form {
   background-position: top center;
   background-size: 134%;
   background-repeat: no-repeat;
-
 }
 
 .close-button {
@@ -207,18 +208,16 @@ form {
   cursor: pointer;
 }
 
-
 //@media ////////////////
 @media (min-width: 1900px) {
   // section {
   //   height:68vh;
-  // } 
+  // }
 }
 @media (max-width: 1899px) {
   section {
     height: auto;
   }
- 
 }
 
 @media (max-width: 1120px) {
@@ -288,7 +287,6 @@ form {
     margin-left: 24px !important;
   }
 }
-
 
 @media (max-width: 500px) {
   .button-container {

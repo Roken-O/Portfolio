@@ -5,6 +5,7 @@ footer {
   height: 200px;
   background-color: rgba(20, 29, 47, 1);
   border-top: 3px solid rgba(0, 190, 232, 1);
+  overflow-x: hidden;
 
   .name-imprint-container {
     display: flex;
@@ -20,14 +21,14 @@ footer {
     }
     .name {
       display: flex;
-
       font-size: 40px;
       font-weight: 900;
-
+      >span{
+        color: rgba(0, 190, 232, 1);
+      }
       .letter-k {
         width: 16px;
         height: 25px;
-
         > img {
           width: 16px;
           height: 24px;

@@ -1,5 +1,6 @@
 section{
     background-color:  rgba(20, 29, 47, 1);
+    overflow-x: hidden;
     .content{
      padding: 30px 64px 32px 64px;
         >h1, h3{
@@ -13,14 +14,12 @@ section{
     display: flex;
     justify-content: flex-start;
     align-items: center;
-  
 
     >img{
         width: 80px;
         height:4px;
         margin-right: 20px;
     }
-
 }
 
 a{
@@ -36,4 +35,20 @@ h1{
     width: 100%;
     position: fixed;
     bottom: 0;
+}
+
+/////media///////
+@media(max-width : 500px){
+    h1{
+        font-size: 30px !important;
+    }
+    .content{
+        font-size: 14px !important;
+    }
+}
+
+@media(max-width : 1200px){
+    .footer-fixed{
+        position: unset !important;
+    }
 }

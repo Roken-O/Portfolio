@@ -17,7 +17,7 @@ export class ProjectsComponent {
       'img' : './../../../assets/img/join.png',
       'techs' : ['Firebase', 'JavaScript', 'CSS', 'HTML'], 
       'description' :'projects.join.description',
-      'button1': 'Live test',
+      'button1': 'https://roken-othman.de/join/index.html',
       'button2' : 'https://github.com/Roken-O/Join-Kanban-Board---G.4'
     },
     {

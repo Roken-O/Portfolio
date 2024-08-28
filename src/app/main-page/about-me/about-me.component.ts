@@ -21,8 +21,5 @@ export class AboutMeComponent {
     this.translate.onLangChange.subscribe((event) => {
       this.isGerman = event.lang === 'de';
     });
-
-
-    // this.isGerman = this.translate.currentLang === 'de';
   }
 }

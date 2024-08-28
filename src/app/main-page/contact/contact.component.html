@@ -1,9 +1,7 @@
 <section>
     <div class="contact-container">
         <img src="./../../../assets/img/line.png">
-        <h1 data-aos="fade-left"
-        data-aos-offset="300"
-        data-aos-easing="ease-in-sine">{{"Contact" | translate}}</h1>
+        <h1 data-aos="fade-up" data-aos-duration="2000">{{"Contact" | translate}}</h1>
     </div>
     <div class="text-form-container">
         <div class="text-container">
@@ -42,10 +40,9 @@
                 </div>
                 <div class="span-checkbox-container">
                     <input type="checkbox" type="checkbox" [(ngModel)]="isPrivacyPolicyAccepted" name="privacyPolicy" required>
-                    <span>{{"I've read the" | translate}} <a href="/privacy-policy">{{"privacy policy" | translate}}</a>{{" and agree to the processing of my data as outlined." | translate}}</span>
+                    <span>{{"I've read the" | translate}} <a  [routerLink]="['/privacy-policy']">{{"privacy policy" | translate}}</a>{{" and agree to the processing of my data as outlined." | translate}}</span>
                 </div>
-                <div data-aos="flip-up"  data-aos-easing="ease-out-cubic"
-                data-aos-duration="2000" class="button-container">
+                <div class="button-container">
                     <input type="submit" value="Send message :)">
                 </div>
             </form>

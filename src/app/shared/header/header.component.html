@@ -1,8 +1,9 @@
 <header>
-    <a class="first-name" href="#profile">
+    <a class="first-name" [routerLink]="['']">
         <div class="name">Ro
             <div class="letter-ki"><img src="./../../../assets/img/kI.png"></div>
-            <div class="letter-k"><img src="./../../../assets/img/k.png"></div>en
+            <div class="letter-k"><img src="./../../../assets/img/k.png"></div>e
+            <span>n</span>
         </div>
     </a>
     <div class="links">
@@ -10,7 +11,7 @@
             <img [src]="'./../../../assets/img/' + currentFlag">
         </div>
         <img src="./../../../assets/img/burger-menu.png" (click)="toggleMenu()">
-        
+
         <a href="#aboutme">{{'About me' | translate}}</a>
         <a href="#skills">{{'frontend' | translate}}</a>
         <a href="#portfolio">Portfolio</a>

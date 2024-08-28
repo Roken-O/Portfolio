@@ -1,11 +1,11 @@
 <footer>
     <div class="name-imprint-container">
-       <a href ="#profile"> <div data-aos="flip-up"  data-aos-easing="ease-out-cubic"
+       <a [routerLink]="['']"> <div data-aos="flip-up"  data-aos-easing="ease-out-cubic"
         data-aos-duration="2000" class="name">Ro
             <div class="letter-ki"><img src="./../../../assets/img/kI.png"></div>
-            <div class="letter-k"><img src="./../../../assets/img/k.png"></div>en
+            <div class="letter-k"><img src="./../../../assets/img/k.png"></div>e<span>n</span>
         </div></a>
-        <a class="imprint-mobile" href="/imprint">Imprint</a>
+        <a class="imprint-mobile" [routerLink]="['/imprint']">Imprint</a>
     </div>
     <div class="c-name-container">
         <span class="c-letter">c</span>
@@ -17,5 +17,5 @@
         <div><a href="https://www.linkedin.com/in/roken-othman-215208305/" target="_blank"><img src="./../../../assets/img/linkedin-button.png"></a></div>
        
     </div>
-    <a class="imprint-mobile-bottom" href="/imprint">Imprint</a>
+    <a class="imprint-mobile-bottom" [routerLink]="['/imprint']">Imprint</a>
 </footer>
