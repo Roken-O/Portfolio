@@ -273,6 +273,17 @@ section {
     }
   }
 }
+@media (max-width: 420px) {
+  h1 {
+    font-size: 30px !important;
+  }
+
+  .text-container {
+    > p {
+      font-size: 14px !important;
+    }
+  }
+}
 @media (max-width: 414px) {
   section {
     .curve {
@@ -350,17 +361,6 @@ section {
     }
     .profile-img-container {
       background-size: 43% 67%, 107% 80% !important;
-    }
-  }
-}
-@media (max-width: 420px) {
-  h1 {
-    font-size: 30px !important;
-  }
-
-  .text-container {
-    > p {
-      font-size: 14px !important;
     }
   }
 }
